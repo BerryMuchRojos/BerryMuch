@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Restaurant</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="main-body">
+	<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20me%20ayudas%20con%20informacion?" class="btn-wsp" target="_blank">
+		<i class="fa fa-whatsapp icono"></i>
+	</a>
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	            
+	                
+	            </ul>
+	        </nav>
+	        
+	       
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Menú de platillos</h3>
+	    
+	    <div class="container-fluid" style="border-top: 1px solid #E1E1E1; padding: 20px; ">
+	        <div class="row align-items-center">
+	            <div class="col-12 col-sm-4 text-center text-sm-start">
+	                <div class="dropdown">
+	                    <button class="btn btn-link dropdown-toggle" type="button" id="categorySubMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        <i class="fas fa-hamburger fa-fw"></i> &nbsp; Menú
+	                    </button>
+	                    <div class="dropdown-menu" aria-labelledby="categorySubMenu">
+	                        <a class="dropdown-item" href="#">Menú 1</a>
+	                        <a class="dropdown-item" href="#">Menú 2</a>
+	                        <a class="dropdown-item" href="#">Menú 3</a>
+	                    </div>
+	                </div>
+	            </div>
+	            
+	        </div>
+	    </div>
+
+
+	    
+
+
+	    <div class="container-cards full-box" style="padding-bottom: 40px;">
+
+			<div class="card-product div-bordered bg-white shadow-2">
+				<figure class="card-product-img">
+					<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+				</figure>
+				<div class="card-product-body">
+					<div class="card-product-content">
+						<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+						<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+						<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+					</div>
+					<div class="text-center card-product-options" style="padding: 10px 0;">
+						<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+						&nbsp; &nbsp;
+						<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+						&nbsp; &nbsp;
+					</div>
+				</div>
+			</div>
+
+			<div class="card-product div-bordered bg-white shadow-2">
+				<figure class="card-product-img">
+					<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+				</figure>
+				<div class="card-product-body">
+					<div class="card-product-content">
+						<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+						<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+						<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+					</div>
+					<div class="text-center card-product-options" style="padding: 10px 0;">
+						<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+						&nbsp; &nbsp;
+						<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+						&nbsp; &nbsp;
+					</div>
+				</div>
+			</div>
+
+			<div class="card-product div-bordered bg-white shadow-2">
+				<figure class="card-product-img">
+					<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+				</figure>
+				<div class="card-product-body">
+					<div class="card-product-content">
+						<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+						<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+						<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+					</div>
+					<div class="text-center card-product-options" style="padding: 10px 0;">
+						<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+						&nbsp; &nbsp;
+						<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+						&nbsp; &nbsp;
+					</div>
+				</div>
+			</div>
+
+			<div class="card-product div-bordered bg-white shadow-2">
+				<figure class="card-product-img">
+					<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+				</figure>
+				<div class="card-product-body">
+					<div class="card-product-content">
+						<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+						<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+						<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+					</div>
+					<div class="text-center card-product-options" style="padding: 10px 0;">
+						<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+						&nbsp; &nbsp;
+						<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+						&nbsp; &nbsp;
+					</div>
+				</div>
+			</div>
+
+	    </div>
+
+
+
+
+	    <nav aria-label="Page navigation example">
+	        <ul class="pagination justify-content-center">
+
+	            <li class="page-item">
+	                <a class="page-link" href="#">1</a>
+	            </li>
+	            <li class="page-item active">
+	                <a class="page-link" href="#">2</a>
+	            </li>
+	            <li class="page-item">
+	                <a class="page-link" href="#">3</a>
+	            </li>
+
+	        </ul>
+	    </nav>
+
+	</div>
+
+	
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> BerryMuch</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Ecuador</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Ecuador, Quit, Valle de los Chillos</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/CarlosAlfaroES/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-instagram-square share"></i>
+	                                Instagram
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

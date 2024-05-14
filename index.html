@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>BerryMuch</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="main-body">
+	<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20me%20ayudas%20con%20informacion?" class="btn-wsp" target="_blank">
+		<i class="fa fa-whatsapp icono"></i>
+	</a>
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="menu.html" >Menú</a>
+	                </li>
+	            
+	                
+	            </ul>
+	        </nav>
+	        
+	       
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="banner">
+	    <div class="banner-body">
+	        <h3 class="text-uppercase">Bienvenido</h3>
+			<p ><img src="./assets/img/LogoCharcuteria.png" alt="" width="500" height="470"></p>
+	        <p>Detalles que se saborean, momentos que se recuerdan. Tu evento, nuestra pasión.</p>
+	        <a href="menu.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a>
+	    </div>
+	</div>
+
+	<div class="container container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros servicios</h3>
+	    <br>
+	    <div class="row">
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-shipping-fast fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Envíos a domicilio</h5>
+	            <p class="text-center">Ya sea que desees endulzar un día especial o crear un momento inolvidable, en BerryMuch estamos aquí para hacer que cada entrega sea un momento de felicidad y conexión. ¡Haz tu pedido ahora y deja que nosotros nos encarguemos de llevar tus mejores deseos directamente a la puerta de quienes más quieres!</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-utensils fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Ventas al por mayor</h5>
+	            <p class="text-center">Desde regalos que deleitan el paladar hasta arreglos florales que encantan los sentidos, nuestra colección está pensada para minoristas, empresas de eventos y profesionales del sector de la celebración.</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-store-alt fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Reservaciones Eventos</h5>
+	            <p class="text-center">En BerryMuch, nos dedicamos a convertir tus celebraciones en momentos inolvidables, ofreciendo una exquisita selección de tablitas de embutidos y quesos, acompañada de una variedad de complementos cuidadosamente seleccionados para satisfacer los paladares más exigentes.</p>
+	        </div>
+	    </div>
+	</div>
+
+	<hr>
+
+	<div class="container-fluid container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros productos</h3>
+	    <div class="container-cards full-box mb-4">
+
+	      <div class="card-product div-bordered bg-white shadow-2">
+	          <figure class="card-product-img">
+	              <img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+	          </figure>
+	          <div class="card-product-body">
+	              <div class="card-product-content">
+	                  <h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+	                  <p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+	                  <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+	              </div>
+	              <div class="text-center card-product-options" style="padding: 10px 0;">
+	                  <a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+	                  &nbsp; &nbsp;
+	                  <a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+	                  &nbsp; &nbsp;
+	              </div>
+	          </div>
+	      </div>
+
+		  <div class="card-product div-bordered bg-white shadow-2">
+			<figure class="card-product-img">
+				<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+			</figure>
+			<div class="card-product-body">
+				<div class="card-product-content">
+					<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+					<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+					<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+				</div>
+				<div class="text-center card-product-options" style="padding: 10px 0;">
+					<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+					&nbsp; &nbsp;
+					<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+					&nbsp; &nbsp;
+				</div>
+			</div>
+		</div>
+
+		<div class="card-product div-bordered bg-white shadow-2">
+			<figure class="card-product-img">
+				<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+			</figure>
+			<div class="card-product-body">
+				<div class="card-product-content">
+					<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+					<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+					<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+				</div>
+				<div class="text-center card-product-options" style="padding: 10px 0;">
+					<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+					&nbsp; &nbsp;
+					<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+					&nbsp; &nbsp;
+				</div>
+			</div>
+		</div>
+
+		<div class="card-product div-bordered bg-white shadow-2">
+			<figure class="card-product-img">
+				<img class="img-fluid" src="./assets/platillos/platillo.jpg" alt="nombre_platillo">
+			</figure>
+			<div class="card-product-body">
+				<div class="card-product-content">
+					<h5 class="text-center fw-bolder">Nombre completo del platillo con limite de caracteres</h5>
+					<p class="card-product-price text-center fw-bolder">$10.00 USD</p>
+					<span class="full-box text-center text-muted" style="display: block;">En stock</span>
+				</div>
+				<div class="text-center card-product-options" style="padding: 10px 0;">
+					<a href="https://wa.me/593991986347?text=Hola,%20estoy%20interesado%20en%20este%20producto%20?"  target="_blank" class="btn btn-link btn-sm btn-rounded text-success" ><i class="fas fa-shopping-bag fa-fw"></i> &nbsp; Haz tu pedido</a>
+					&nbsp; &nbsp;
+					<a href="details.html" class="btn btn-link btn-sm btn-rounded" ><i class="fas fa-box-open fa-fw"></i> &nbsp; Detalles</a>
+					&nbsp; &nbsp;
+				</div>
+			</div>
+		</div>
+	    </div>
+	    <p class="text-center"><a href="menu.html" class="btn btn-primary"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a></p>
+	</div>
+
+	<hr>
+
+	
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> BerryMuch</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Ecuador</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i> Ecuador, Quit, Valle de los Chillos</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/CarlosAlfaroES/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com/c/CarlosAlfaro007" class="footer-link" target="_blank" >
+	                            <i class="fab fa-instagram-square share"></i>
+	                                Instagram
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>
